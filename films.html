@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Films</title>
+  <style>
+    .navbar {
+      /* Add your navbar styles here */
+    }
+    
+    .gallery {
+      display: flex;
+      flex-wrap: wrap;
+      justify-content: space-between;
+    }
+    
+    .gallery img {
+      width: calc(33.3333% - 10px);
+      margin-bottom: 20px;
+      cursor: pointer;
+    }
+
+    .modal {
+      display: none;
+      position: fixed;
+      z-index: 1;
+      left: 0;
+      top: 0;
+      width: 100%;
+      height: 100%;
+      background-color: rgba(0, 0, 0, 0.5);
+    }
+
+    .modal-content {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      max-width: 90%;
+      max-height: 90%;
+    }
+  </style>
+</head>
+<body>
+  <div class="navbar">
+    <!-- Add your navbar content here -->
+  </div>
+
+  <div class="gallery">
+    <img src="albums/films/IMG_6571.jpg" alt="Image 1">
+    <img src="albums/films/IMG_7379.JPG" alt="Image 2">
+    <img src="albums/films/IMG_6473.jpg" alt="Image 3">
+    <img src="albums/films/IMG_6495.jpg" alt="Image 4">
+    <img src="albums/films/IMG_6516.jpg" alt="Image 5">
+    <img src="albums/films/IMG_6541.jpg" alt="Image 6">
+    <img src="albums/films/IMG_6560.jpg" alt="Image 7">
+    <img src="albums/films/IMG_6572.jpg" alt="Image 8">
+    <img src="albums/films/IMG_7346.JPG" alt="Image 9">
+    <img src="albums/films/IMG_7348.JPG" alt="Image 10">
+    <img src="albums/films/IMG_7349.JPG" alt="Image 11">
+    <img src="albums/films/IMG_7350.JPG" alt="Image 12">
+    <img src="albums/films/IMG_7364.JPG" alt="Image 13">
+    <img src="albums/films/IMG_7372.JPG" alt="Image 14">
+    <img src="albums/films/IMG_7373.JPG" alt="Image 15">
+    <img src="albums/films/IMG_7378.JPG" alt="Image 16">
+    <img src="albums/films/IMG_3343.jpg" alt="Image 17">
+    <img src="albums/films/IMG_7380.JPG" alt="Image 18">
+    <img src="albums/films/IMG_7382.JPG" alt="Image 19">
+    <img src="albums/films/IMG_3332.jpg" alt="Image 20">
+    <img src="albums/films/IMG_3329.jpg" alt="Image 21">
+    <img src="albums/films/IMG_3328.jpg" alt="Image 22">
+    <img src="albums/films/395ab364ci8d957200b271e936fab5d6.JPG" alt="Image 23">
+    <img src="albums/films/fcc472779tb4b3d4e9e4938f5606e432.jpg" alt="Image 24">
+    <img src="albums/films/f2ca3fe29o3bfd036bca7cae7e169a0c.jpg" alt="Image 25">
+    <img src="albums/films/f0adc3307idf9abf8d439c71e31d6c25.jpg" alt="Image 26">
+    <img src="albums/films/ece720a07s5c8fecf48471c890720c73.JPG" alt="Image 27">
+    <img src="albums/films/ec8e6840dkba155144feb0bdf3e303b0.jpg" alt="Image 28">
+    <img src="albums/films/ebe970583s5b2694d9c82c6a64b93e43.JPG" alt="Image 29">
+    <img src="albums/films/e54289c3eoce0c2ec8397333a6b04dc4.jpg" alt="Image 30">
+    <img src="albums/films/e6f417fefs07d094df0e6791b7f09d2c.JPG" alt="Image 31">
+    <img src="albums/films/dbb14c6ffu3f4f3f512900640e275617.jpg" alt="Image 32">
+    <img src="albums/films/d6319237dq34f3990eb9c8cdf1b661e3.JPG" alt="Image 33">
+    <img src="albums/films/cba37577do78c0a8d6467939121450d1.jpg" alt="Image 34">
+    <img src="albums/films/b422fed5cn7a20e4eeb3eaaff8b3d3a8.jpg" alt="Image 35">
+    <img src="albums/films/b5f5377c5h5e80bc27afa909ecf4bf36.jpg" alt="Image 36">
+    <img src="albums/films/741228303ree2133f0c636bbef74b773.JPG" alt="Image 37">
+    <img src="albums/films/4490632f6oc3ecf805acb7787745429c.jpg" alt="Image 38">
+    <img src="albums/films/853582b10i77dd2d38101854e5acfb30.jpg" alt="Image 39">
+    <img src="albums/films/184372da2lfffe356836f772134f51dd.jpg" alt="Image 40">
+    <img src="albums/films/62524b649saa81afffdd15af715d5c85.jpg" alt="Image 41">
+    <img src="albums/films/720ee429fkd5cb5bc87f272971609d79.jpg" alt="Image 42">
+    <img src="albums/films/509d0c8e4u27e57541931f6eca82876f.JPG" alt="Image 43">
+    <img src="albums/films/308f0094aga074711eeea86acd8ece4f.jpg" alt="Image 44">
+    <img src="albums/films/307b0b464t2f542585d20eccbe70124e.jpg" alt="Image 45">
+    <img src="albums/films/276b9b923ra05192893e9c02b4ea6b09.jpg" alt="Image 46">
+    <img src="albums/films/75a6af771h148cf13bfa2825f5822539.JPG" alt="Image 47">
+    <img src="albums/films/66feb3879rb1fbe1d6d7e1e18ca36676.jpg" alt="Image 48">
+
+    <img src="albums/films/000015.jpg" alt="Image 51">
+
+    <img src="albums/films/9be324b34p8532246f33d6b211af7b40.JPG" alt="Image 53">
+    <img src="albums/films/000008.jpg" alt="Image 54">
+    <img src="albums/films/7c57434e3jfe2b99a5c7bb884406ddca.JPG" alt="Image 55">
+    <img src="albums/films/6cb02cc7fp173a5b39454858d308d444.jpg" alt="Image 56">
+    <img src="albums/films/4a9128634r1fd825ecdce6899a985d3f.jpg" alt="Image 57">
+  </div>
+
+  <div class="modal" id="modal">
+    <img class="modal-content" id="modal-content">
+  </div>
+
+  <script>
+    var gallery = document.querySelector('.gallery');
+    var modal = document.getElementById('modal');
+    var modalContent = document.getElementById('modal-content');
+
+    gallery.addEventListener('click', function (event) {
+      if (event.target.tagName === 'IMG') {
+        modalContent.src = event.target.src;
+        modal.style.display = 'block';
+      }
+    });
+
+    modal.addEventListener('click', function () {
+      modal.style.display = 'none';
+    });
+  </script>
+</body>
+</html>

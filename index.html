@@ -94,6 +94,33 @@ body {
   background: #ddd;
 }
 
+/* Make two project videos on the same line */
+.video-section {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.video-wrapper {
+  flex: 1;
+  margin-right: 10px;
+  max-width: calc(50% - 30px);
+}
+
+.video-wrapper:last-child {
+  margin-right: 0;
+}
+
+/* Style the project title links */
+.project-link {
+  color: inherit;
+  text-decoration: underline;
+}
+
+.project-link:hover {
+  color: #1abc9c;
+}
+
 /* Responsive layout - when the screen is less than 700px wide, make the two columns stack on top of each other instead of next to each other */
 @media screen and (max-width: 700px) {
   .row {   
@@ -113,41 +140,60 @@ body {
 <body>
 
 <div class="header">
-  <h1>Hi I'm Zhen Lu</h1>
-  <p>Welcome to my page.</p>
+  <h1>Hi Please call me Zhēn! (臻)</h1>
+  <p>email: lu.zhen1@northeastern.edu
+  <br>phone: 617-733-1824</p>
+  </p>
 </div>
 
 <div class="navbar">
-  <a href="#">Link</a> // 点击条约，栏目
-  <a href="#">Link</a>
-  <a href="#">Link</a>
-  <a href="#" class="right">Link</a>
+  <a href="https://zheenlu.github.io/">homepage</a> 
+  <a href="https://github.com/">github</a> 
+  <a href="films.html">films</a>
+  <a href="https://www.instagram.com/luzhen_jing/">instgram</a>
+  <a href="https://space.bilibili.com/10101303?spm_id_from=333.1007.0.0">foray into content creation</a>
+  
+  <!--<a href="#" class="right">Link</a>-->
 </div>
 
 <div class="row">
   <div class="side">
     <h2>About me</h2>
-    <h5>Photo of me:</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>I am currently a student in the Align program at Khoury College of Computer Sciences at Northeastern University, starting in Fall 2022. I am looking for a co-op opportunity for Spring 2024.</p>
+    <!--<h5>Photo of me:</h5>-->
+    <img src="albums/profile/Lu, Zhen_JPP2231 (2).jpg" alt="My Photo" style="width: 100%; height: auto;">
+    <!--<div class="fakeimg" style="height:200px;">Image</div>-->
+    <p>currently I'm a student in the Align program at Khoury College of Computer Sciences at Northeastern University, starting in Fall 2022. I am looking for a co-op opportunity for Spring 2024.</p>
     <h3>I am a...</h3>
     <p>software engineer, movie-lover, photographer, creator, to name a few, and most importantly a girl who likes to wonder.</p>
+    <!--<div class="fakeimg" style="height:60px;">Image</div><br>
     <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div><br>
-    <div class="fakeimg" style="height:60px;">Image</div>
+    <div class="fakeimg" style="height:60px;">Image</div>-->
   </div>
   <div class="main">
     <h2>Projects</h2>
-    <h5>using Python, Java</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
-    <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <div class="video-section">
+      <div class="video-wrapper">
+        <h4><a href="https://github.com/zheenlu/Java_Swing_SWG_MVC" class="project-link">Swing, SVG in Java</a></h4>
+        <video src="albums/projects/Screen Recording 2023-04-29 at 12.01.30 PM.mov" controls width="500" height="500"></video>
+      </div>
+      <div class="video-wrapper">
+        <h4><a href="https://github.com/zheenlu/Game_Puzzle/tree/main" class="project-link">Turtle/Pazzle Game in Python</a></h4>
+        <video src="albums/projects/puzzle_game.mov" controls width="500" height="500"></video>
+      </div>
+    </div>
+    <!--<div class="fakeimg" style="height:200px;">Image</div>-->
+    <!--<iframe src="albums/projects/buildingsOut.html" width="500" height="500" frameborder="0"></iframe>
+    <iframe src="albums/projects/hoops.html" width="500" height="500" frameborder="0"></iframe>-->
+    <!--<p>Some text..</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>-->
     <br>
-    <h2>Film Photography</h2>
-    <h5>got my first film camera in 2018, and it's been through ups and downs with me ever since.</h5>
-    <div class="fakeimg" style="height:200px;">Image</div>
+    <h2><a href="films.html" class="project-link">Film Photography</a></h2>
+    <h4>got my first film camera in 2018, and it's been through ups and downs with me ever since.</h4>
+    <img src="albums/films/IMG_7379.JPG" alt="My Photo" style="width: 95%; height: auto;">
+    <img src="albums/films/IMG_7346.JPG" alt="My Photo" style="width: 95%; height: auto;">
+    <!--<div class="fakeimg" style="height:200px;">Image</div>
     <p>Some text..</p>
-    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>
+    <p>Sunt in culpa qui officia deserunt mollit anim id est laborum consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco.</p>-->
   </div>
 </div>
 
